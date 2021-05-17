@@ -1,0 +1,62 @@
+
+<html>
+    <head>
+        <!--
+        <script
+            src="https://code.jquery.com/jquery-3.6.0.min.js"
+            integrity="sha256-/xUj+3OJU5yExlq6GSYGSHk7tPXikynS7ogEvDej/m4="
+            crossorigin="anonymous">
+        </script>
+        -->
+        <script src="https://code.jquery.com/jquery-1.12.4.js"></script>
+        <script src="https://code.jquery.com/ui/1.12.1/jquery-ui.js"></script>
+
+        <link rel="stylesheet" type="text/css" href="calcstyles.css">
+    </head>
+    <body>
+        <h1>First jQuery app</h1>
+        
+        <div id="draggable">
+            <h2>Simple Calculator</h2>
+        </div>
+        
+        <p>Justin Law, May 2021</p>
+        
+        <div id="calculator">
+            <h2 id="display">0</h2>
+            <table>
+                <tr>
+                    <td id="1" value="1">1</td>
+                    <td id="2">2</td>
+                    <td id="3">3</td>
+                </tr>
+                <tr>
+                    <td id="4">4</td>
+                    <td id="5">5</td>
+                    <td id="6">6</td>
+                </tr>
+                <tr>
+                    <td id="7">7</td>
+                    <td id="8">8</td>
+                    <td id="9">9</td>
+                </tr>
+                <tr>
+                    <td id="0">0</td>
+                    <td class="operator" id="+">+</td>
+                    <td class="operator" id="-">-</td>
+                </tr>
+            </table>
+            <button type="submit">Submit</button>
+            <button type="reset">Reset</button>
+        </div>
+
+        <script>
+           $(function() {
+                $("#calculator").draggable();
+              });
+        </script>
+        <script src="support.js"></script>
+
+        
+    </body>
+</html>
